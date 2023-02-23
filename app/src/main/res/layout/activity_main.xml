@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="3pt"
+        android:orientation="vertical">
+        <TextView android:layout_height="24dp"
+            android:layout_width="match_parent"
+            android:textSize="5pt"
+            android:text="Enter"
+            android:gravity="left"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:id="@+id/textNA">
+        </TextView>
+
+        <EditText android:id="@+id/etName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5pt"
+            android:textStyle="bold"
+            android:fontFamily="serif">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="3pt"
+        android:orientation="vertical">
+        <TextView android:layout_height="24dp"
+            android:layout_width="match_parent"
+            android:textSize="5pt"
+            android:text="FromDB"
+            android:gravity="left"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:id="@+id/textDB">
+        </TextView>
+
+        <EditText android:id="@+id/etfromDB"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="5pt"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:inputType="numberDecimal">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="3pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginBottom="15dp">
+        <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:textSize="8pt"
+            android:onClick="addInfo"
+            android:id="@+id/btnAdd">
+        </Button>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="READ"
+            android:textSize="8pt"
+            android:onClick="readInfo"
+            android:id="@+id/btnSub">
+        </Button>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="CLEAR"
+            android:textSize="8pt"
+            android:onClick="clearInfo"
+            android:id="@+id/btnMult">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
